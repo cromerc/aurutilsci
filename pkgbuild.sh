@@ -7,7 +7,7 @@ export PACKAGER="https://travis-ci.org/${1}/builds/${2}"
 
 # Build package.
 cd "src"
-makepkg -Lcrs --noconfirm --skippgpcheck
+makepkg -Lcrs  --skippgpcheck --noconfirm
 cd ".."
 
 cp "src/aurutils-"*".pkg.tar.xz" "bin"
